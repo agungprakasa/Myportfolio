@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agung Prakasa Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-white p-6">
+  <main class="max-w-5xl mx-auto space-y-8 bg-white p-6 rounded-2xl shadow-lg">
+    <div class="text-center space-y-3">
+      <img src="/profile.jpg" alt="Profile" class="w-32 h-32 rounded-full mx-auto shadow-md border-4 border-white" />
+      <h1 class="text-4xl font-bold text-blue-900">Agung Prakasa</h1>
+      <h2 class="text-xl text-blue-700">QA Engineer & Automation Tester</h2>
+      <p class="text-gray-800 max-w-xl mx-auto">
+        Passionate QA Engineer with 5+ years of experience in test automation, API testing, and building scalable quality assurance systems.
+      </p>
+      <a href="/Agung_Prakasa_CV.pdf" download class="inline-block mt-2 text-sm text-blue-600 underline">⬇ Download CV</a>
+    </div>
+
+    <section>
+      <h3 class="text-2xl font-semibold mb-4 text-blue-800">Skills</h3>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+        <div class="flex flex-col items-center">
+          <img src="/skills/selenium.png" class="w-12 h-12 mb-2" />
+          <span class="text-sm">Selenium</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="/skills/cypress.png" class="w-12 h-12 mb-2" />
+          <span class="text-sm">Cypress</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="/skills/postman.png" class="w-12 h-12 mb-2" />
+          <span class="text-sm">Postman</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="/skills/jenkins.png" class="w-12 h-12 mb-2" />
+          <span class="text-sm">Jenkins</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="/skills/github-actions.png" class="w-12 h-12 mb-2" />
+          <span class="text-sm">GitHub Actions</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="/skills/docker.png" class="w-12 h-12 mb-2" />
+          <span class="text-sm">Docker</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="text-2xl font-semibold mb-4 text-blue-800">Projects</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 rounded-lg shadow-md p-4">
+          <img src="/projects/ecommerce_test.gif" alt="E-Commerce E2E Testing" class="rounded-md w-full h-40 object-cover" />
+          <div class="aspect-video mt-2">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video" class="w-full h-full rounded-md" allowfullscreen></iframe>
+          </div>
+          <h4 class="text-xl font-bold text-blue-900 mt-3">E-Commerce E2E Testing</h4>
+          <p class="text-gray-700 text-sm">Automated end-to-end test cases using Cypress for major user flows, improving release confidence.</p>
+          <a href="https://github.com/agungprakasa/ecommerce-tests" class="text-blue-600 text-sm underline">View on GitHub</a>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg shadow-md p-4">
+          <img src="/projects/api_testing_preview.png" alt="API Testing" class="rounded-md w-full h-40 object-cover" />
+          <h4 class="text-xl font-bold text-blue-900 mt-3">Visual Regression API Testing</h4>
+          <p class="text-gray-700 text-sm">Built a Postman-based API regression suite with integration to Slack and Jenkins.</p>
+          <a href="https://github.com/agungprakasa/api-testing-framework" class="text-blue-600 text-sm underline">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center space-x-4 mt-6">
+      <a href="https://github.com/agungprakasa" class="inline-block text-sm text-gray-700 hover:underline">🐱 GitHub</a>
+      <a href="https://linkedin.com/in/agungprakasa" class="inline-block text-sm text-gray-700 hover:underline">💼 LinkedIn</a>
+      <a href="mailto:agung@example.com" class="inline-block text-sm text-gray-700 hover:underline">✉️ Email</a>
+    </section>
+  </main>
+</body>
+</html>
