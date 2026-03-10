@@ -2,136 +2,492 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agung Prakasa Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agung Prakasa — Senior QA &amp; DevSecOps Engineer</title>
+  <meta name="description" content="Senior QA &amp; DevSecOps Engineer with 8+ years at PT. Pos Indonesia. Selenium, Appium, Python, Docker, Jenkins, OWASP ZAP. Open to remote worldwide."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-white p-6">
-  <main class="max-w-5xl mx-auto space-y-8 bg-white p-6 rounded-2xl shadow-lg">
-    <div class="text-center space-y-3">
-      <!-- <img src="skills/fotgua.png" alt="Profile" class="w-32 h-32 rounded-full mx-auto shadow-md border-4 border-white" /> -->
-      <h1 class="text-4xl font-bold text-blue-900">Agung Prakasa</h1>
-      <h2 class="text-xl text-blue-700">QA Engineer & Automation Tester</h2>
-      <p class="text-gray-800 max-w-xl mx-auto">
-        Passionate QA Engineer with 5+ years of experience in test automation, API testing, and building scalable quality assurance systems. 
-      </p>
-      <a href="https://drive.google.com/file/d/12O_yd3LM6iMcI03-TvVS0oJddJQHRAP1/view?usp=drive_link" download class="inline-block mt-2 text-sm text-blue-600 underline">⬇ Download CV</a>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-initials">AP</span>
+        <span class="logo-sep"></span>
+        <span class="logo-title">QA &amp; DevSecOps</span>
+      </a>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#services"   class="nav-link">What I Do</a></li>
+        <li><a href="#projects"   class="nav-link">Work</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact"    class="nav-link nav-cta">Get In Touch</a></li>
+      </ul>
+      <button class="hamburger" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
     </div>
+  </nav>
 
-    <section>
-      <h3 class="text-2xl font-semibold mb-4 text-blue-800">Skills</h3>
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
-        <div class="flex flex-col items-center">
-          <img src="skills/selenium.jpg" class="w-12 h-12 mb-2" />
-          <span class="text-sm">Selenium</span>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-layout">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="availability-dot"></span>
+          Open to remote opportunities — worldwide
         </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/appium.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">Appium</span>
+        <h1 class="hero-heading">
+          <span class="h-line" style="--d:0.05s">Quality you can</span>
+          <span class="h-line h-serif" style="--d:0.18s">ship with confidence.</span>
+        </h1>
+        <p class="hero-body">
+          I'm <strong>Agung Prakasa</strong> — Senior QA &amp; DevSecOps Engineer
+          with 8+ years at PT. Pos Indonesia, building automated test suites,
+          CI/CD pipelines, and security testing systems for Payment, Logistics,
+          and Mobile platforms at national scale. Based in Bandung, Indonesia &middot; Remote-ready.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-solid">View My Work</a>
+          <a href="https://drive.google.com/file/d/12O_yd3LM6iMcI03-TvVS0oJddJQHRAP1/view?usp=drive_link" class="btn btn-outline" download>Download CV</a>
         </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/postman.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">Postman</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/jenkins.jpg" class="w-12 h-12 mb-2" />
-          <span class="text-sm">Jenkins</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/githubaction.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">GitHub Actions</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/docker.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">Docker</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/k6.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">K6</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/burpsuite.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">Burpsuite</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/n8n.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">N8N</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/python.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">Python</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="skills/JS.png" class="w-12 h-12 mb-2" />
-          <span class="text-sm">Java Script</span>
+        <div class="hero-metrics">
+          <div class="metric">
+            <strong class="metric-n" data-target="8">0</strong><sup>+ yr</sup>
+            <span>Professional Experience</span>
+          </div>
+          <div class="metric-rule"></div>
+          <div class="metric">
+            <strong class="metric-n" data-target="30">0</strong><sup>%</sup>
+            <span>Manual Testing Time Saved</span>
+          </div>
+          <div class="metric-rule"></div>
+          <div class="metric">
+            <strong class="metric-n" data-target="20">0</strong><sup>%</sup>
+            <span>Post-release Defects Reduced</span>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section>
-      <h3 class="text-2xl font-semibold mb-4 text-blue-800">Projects</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 rounded-lg shadow-md p-4">
-          <!-- <a href="https://posaja.posindonesia.co.id/" download class="inline-block mt-2 text-sm text-blue-600 underline">Posaja Website</a> -->
-          <img src="projects/posajaweb.png" alt="posaja website" class="rounded-md w-full h-40 object-cover" />
-          <!-- <div class="aspect-video mt-2">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video" class="w-full h-full rounded-md" allowfullscreen></iframe>
-          </div> -->
-          <h4 class="text-xl font-bold text-blue-900 mt-3">Posaja Website</h4>
-          <p class="text-gray-700 text-sm">Automated end-to-end test cases using Selenium for major user flows, improving release confidence.</p>
-          <a href="https://drive.google.com/file/d/1f8-YJCLnKNUIHtJFWCB2KCIGtrOTqOAF/view?usp=drive_link" class="text-blue-600 text-sm underline">View Sample Test Case Automation Test</a>
-          ||<a href="https://posaja.posindonesia.co.id/" class="text-blue-600 text-sm underline">View Application</a>
+      <div class="hero-right" aria-hidden="true">
+        <div class="pipeline-card">
+          <div class="pipeline-header">
+            <span class="ph-dot ph-amber"></span>
+            <span class="ph-dot ph-green"></span>
+            <span class="ph-title">GitLab CI/CD &mdash; Posaja</span>
+            <span class="ph-branch">&#9135; main</span>
+          </div>
+          <div class="pipeline-body">
+            <div class="p-stage s-done">
+              <span class="p-icon">&#10003;</span>
+              <div class="p-info"><strong>Code Push</strong><em>Triggered pipeline</em></div>
+            </div>
+            <div class="p-connector done"></div>
+            <div class="p-stage s-done">
+              <span class="p-icon">&#10003;</span>
+              <div class="p-info"><strong>Selenium Tests</strong><em>All passed &middot; 0 failed</em></div>
+            </div>
+            <div class="p-connector done"></div>
+            <div class="p-stage s-done">
+              <span class="p-icon">&#10003;</span>
+              <div class="p-info"><strong>OWASP ZAP Scan</strong><em>No critical issues</em></div>
+            </div>
+            <div class="p-connector running"></div>
+            <div class="p-stage s-running">
+              <span class="p-icon spin">&#10227;</span>
+              <div class="p-info"><strong>Performance Test</strong><em>Running&hellip; load test</em></div>
+            </div>
+            <div class="p-connector pending"></div>
+            <div class="p-stage s-pending">
+              <span class="p-icon">&middot;</span>
+              <div class="p-info"><strong>SonarQube Report</strong><em>Waiting</em></div>
+            </div>
+          </div>
+          <div class="pipeline-footer">
+            <span class="pf-tag">selenium</span>
+            <span class="pf-tag">postman</span>
+            <span class="pf-tag">docker</span>
+            <span class="pf-tag">sonarqube</span>
+            <span class="pf-tag">owasp zap</span>
+          </div>
         </div>
-
-        <div class="bg-gray-50 rounded-lg shadow-md p-4">
-          <img src="projects/posajamobile.png" alt="Posaja Mobile" class="rounded-md w-full h-40 object-cover" />
-          <h4 class="text-xl font-bold text-blue-900 mt-3">Posaja Mobile</h4>
-          <p class="text-gray-700 text-sm">Automated end-to-end test cases using Appium,appium inspector & Selenium Python for major user flows, improving release confidence.</p>
-          <a href="https://drive.google.com/file/d/1f7qOmOtEJUI1vuivoWuhMLjtPCDVu8tR/view?usp=drive_link" class="text-blue-600 text-sm underline">View Sample Test Case Automation Test</a>
-          || <a href="https://play.google.com/store/apps/details?id=com.posindonesia.cob&hl=id&pli=1" class="text-blue-600 text-sm underline">View Application</a>
+        <div class="float-badge fb1">
+          <span class="fb-icon">&#128737;</span> Security-first QA
         </div>
-
-        <div class="bg-gray-50 rounded-lg shadow-md p-4">
-          <img src="projects/githubactionreportnewman.png" alt="Performance Testing" class="rounded-md w-full h-40 object-cover" />
-          <h4 class="text-xl font-bold text-blue-900 mt-3">API Automation Testing</h4>
-          <p class="text-gray-700 text-sm">Perform API testing in Postman and create an automation testing script that will be run using Newman, then integrated with GitHub Action/Jenkins.</p>
-          <a href=" https://drive.google.com/file/d/1QXiIdshQQO-u1ADFEUat9XyxgQSozT6f/view?usp=drive_link" class="text-blue-600 text-sm underline">View Example Video API Automation Testing With Github Action</a>
-          || <a href="https://github.com/agungprakasa/testingnewman" class="text-blue-600 text-sm underline">View on GitHub</a>
-        </div>
-
-        <div class="bg-gray-50 rounded-lg shadow-md p-4">
-          <img src="projects/N8N.png" alt="AutomationAI" class="rounded-md w-full h-40 object-cover" />
-          <h4 class="text-xl font-bold text-blue-900 mt-3">Automation Generate Test Case with N8N</h4>
-          <p class="text-gray-700 text-sm">Automated the generation of test cases and Postman collection flows using N8N to streamline the QA process. This solution reduces manual effort, improves testing consistency, and ensures comprehensive test coverage.</p>
-          <a href="https://drive.google.com/file/d/1rTj9bPXpx10267n5eAUgCy98LKrvWqhT/view?usp=drive_link" class="text-blue-600 text-sm underline">View Example Video N8N Workflow and Result</a>
-        </div>
-        <div class="bg-gray-50 rounded-lg shadow-md p-4">
-          <img src="projects/githubaction.png" alt="AutomationAI" class="rounded-md w-full h-40 object-cover" />
-          <h4 class="text-xl font-bold text-blue-900 mt-3">Deploy CI/CD Github Action on Hostinger</h4>
-          <p class="text-gray-700 text-sm">Deployment Automation → to make the release process faster, more efficient, and with minimal errors.</p>
-          <a href="https://drive.google.com/file/d/1dDCk8NHEzypr_h1qLrz2CCahmfoehmlW/view?usp=sharing" class="text-blue-600 text-sm underline">View Example Video Deploy CI/CD to Hosting</a>
-          || <a href="https://mpsonline.cloud" class="text-blue-600 text-sm underline">View Application</a>
-        </div>
-        <div class="bg-gray-50 rounded-lg shadow-md p-4">
-          <img src="projects/grafanak6.png" alt="AutomationAI" class="rounded-md w-full h-40 object-cover" />
-          <h4 class="text-xl font-bold text-blue-900 mt-3">Performance Test - Distributed Load Testing with k6 + Grafana + VictoriaMetrics </h4>
-          <p class="text-gray-700 text-sm">Ensure our systems are reliable, scalable, and ready for peak traffic.</p>
-          <a href="https://drive.google.com/file/d/1LbtabLnKhDQRJtwWGiVCGHW0OJcDfiTC/view?usp=sharing" class="text-blue-600 text-sm underline">View Example Video Load Testing with k6</a>
-        </div>
-        <div class="bg-gray-50 rounded-lg shadow-md p-4">
-          <img src="projects/jmeterloadtestdb.png" alt="AutomationAI" class="rounded-md w-full h-40 object-cover" />
-          <h4 class="text-xl font-bold text-blue-900 mt-3">Performance Test - Database Load testing using Apache JMeter </h4>
-          <p class="text-gray-700 text-sm">Ensured that our backend could scale reliably as user traffic grows.</p>
-          <a href="https://drive.google.com/file/d/1J6clc_erSRGiqcn0DiZJQIUUxTahwbea/view?usp=sharing" class="text-blue-600 text-sm underline">View Example Video Database Load Test With Jmeter</a>
+        <div class="float-badge fb2">
+          <span class="fb-icon">&#9889;</span> 30% faster releases
         </div>
       </div>
-    </section>
+    </div>
+    <div class="scroll-hint">
+      <div class="sh-wheel"></div>
+      <span>scroll to explore</span>
+    </div>
+  </section>
 
-    <section class="text-center space-x-4 mt-6">
-      <a href="https://github.com/agungprakasa" class="inline-block text-sm text-gray-700 hover:underline">🐱 GitHub</a>
-      <a href="https://www.linkedin.com/in/agung-prakasa-769b53137/" class="inline-block text-sm text-gray-700 hover:underline">💼 LinkedIn</a>
-      <a href="mailto:agungprakasa49@gmail.com" class="inline-block text-sm text-gray-700 hover:underline">✉️ Email</a>
-    </section>
-  </main>
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="section-kicker">/ About me</p>
+          <h2 class="section-heading">
+            QA meets Security &mdash;<br/>
+            <em>DevSecOps done right.</em>
+          </h2>
+        </div>
+        <div class="about-right">
+          <p>I'm a Senior QA &amp; DevSecOps Engineer with 8+ years at PT. Pos Indonesia, one of Indonesia's largest state-owned logistics companies. I've ensured the quality of mission-critical products used by millions of Indonesians &mdash; from the <strong>Posaja UMKM</strong> platform for small businesses to the <strong>Pospay SuperApp</strong> and nationwide delivery systems.</p>
+          <p>What sets me apart is combining deep QA expertise with a security mindset. I don't just write tests &mdash; I integrate vulnerability scanning (OWASP ZAP, Burp Suite), static code analysis (SonarQube), and network security awareness into every pipeline I build. I'm now looking to bring this skillset to a global remote engineering team.</p>
+          <div class="about-tags">
+            <span>Agile / Scrum</span>
+            <span>DevSecOps</span>
+            <span>Shift-left QA</span>
+            <span>Black / White / Grey Box</span>
+            <span>Security Testing</span>
+            <span>UTC+7 &middot; Remote-native</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section id="services">
+    <div class="container">
+      <p class="section-kicker">/ What I do</p>
+      <h2 class="section-heading">Full-spectrum quality,<br/><em>from code to production.</em></h2>
+      <div class="services-grid">
+
+        <div class="svc-card" data-idx="0">
+          <div class="svc-num">01</div>
+          <h3>Test Automation</h3>
+          <p>Scalable automated test suites for web and mobile using Selenium &amp; Appium with Python and JavaScript. Regression suites that run in CI on every commit.</p>
+          <ul class="svc-list">
+            <li>Web automation with Selenium WebDriver</li>
+            <li>Mobile automation with Appium (iOS &amp; Android)</li>
+            <li>Functional, regression &amp; UAT coverage</li>
+          </ul>
+          <div class="svc-tools">
+            <span>Selenium</span><span>Appium</span><span>Python</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="svc-card" data-idx="1">
+          <div class="svc-num">02</div>
+          <h3>CI/CD Pipeline Integration</h3>
+          <p>Building and maintaining Jenkins and GitLab CI/CD pipelines with integrated quality gates &mdash; automated tests, security scans, and code analysis on every push.</p>
+          <ul class="svc-list">
+            <li>Jenkins &amp; GitLab CI pipeline design</li>
+            <li>Docker containerized test environments</li>
+            <li>Automated quality gate enforcement</li>
+          </ul>
+          <div class="svc-tools">
+            <span>Jenkins</span><span>GitLab CI</span><span>Docker</span><span>Git</span>
+          </div>
+        </div>
+
+        <div class="svc-card" data-idx="2">
+          <div class="svc-num">03</div>
+          <h3>API Testing</h3>
+          <p>Comprehensive REST API validation using Postman and Burp Suite &mdash; from functional correctness to authentication edge cases and security vulnerability probing.</p>
+          <ul class="svc-list">
+            <li>Postman collections &amp; automated Newman runs</li>
+            <li>API security testing with Burp Suite</li>
+            <li>Payment &amp; Logistics backend validation</li>
+          </ul>
+          <div class="svc-tools">
+            <span>Postman</span><span>Burp Suite</span><span>REST API</span>
+          </div>
+        </div>
+
+        <div class="svc-card" data-idx="3">
+          <div class="svc-num">04</div>
+          <h3>Security &amp; Vulnerability Testing</h3>
+          <p>Integrated security QA using OWASP ZAP and Burp Suite. DAST, SAST, and OWASP Top 10 coverage ensuring vulnerabilities are caught before production.</p>
+          <ul class="svc-list">
+            <li>OWASP ZAP automated scanning in CI</li>
+            <li>Foundation Level Threat Intelligence certified</li>
+            <li>NSE 1, 2, 3 Network Security certified</li>
+          </ul>
+          <div class="svc-tools">
+            <span>OWASP ZAP</span><span>Burp Suite</span><span>SonarQube</span>
+          </div>
+        </div>
+
+        <div class="svc-card" data-idx="4">
+          <div class="svc-num">05</div>
+          <h3>Performance Testing</h3>
+          <p>Load and performance testing for web applications and APIs. Identifying bottlenecks before they impact end users &mdash; critical for high-traffic logistics platforms.</p>
+          <ul class="svc-list">
+            <li>Performance test design &amp; execution</li>
+            <li>Baseline, soak &amp; stress test scenarios</li>
+            <li>Reporting with actionable engineering insights</li>
+          </ul>
+          <div class="svc-tools">
+            <span>Python</span><span>Docker</span><span>Jenkins</span><span>GitLab CI</span>
+          </div>
+        </div>
+
+        <div class="svc-card" data-idx="5">
+          <div class="svc-num">06</div>
+          <h3>QA Leadership &amp; Mentoring</h3>
+          <p>Leading QA processes end-to-end: test planning, sprint participation, mentoring junior engineers, and building quality culture across cross-functional teams.</p>
+          <ul class="svc-list">
+            <li>Test plan &amp; test case design</li>
+            <li>Junior QA mentoring &amp; guidance</li>
+            <li>Sprint planning, standups &amp; retrospectives</li>
+          </ul>
+          <div class="svc-tools">
+            <span>Jira</span><span>Trello</span><span>ClickUp</span><span>TestRail</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-kicker">/ Featured work</p>
+      <h2 class="section-heading">Real products,<br/><em>real impact.</em></h2>
+      <div class="projects-list">
+
+        <div class="proj-row proj-featured" data-idx="0">
+          <div class="proj-info">
+            <div class="proj-meta">
+              <span class="proj-tag">Automation + Security + Performance</span>
+              <span class="proj-year">2017&ndash;Present</span>
+            </div>
+            <h3>Posaja UMKM &mdash; Stock &amp; Delivery Platform</h3>
+            <p>An application helping Indonesian MSMEs manage stock, delivery, and business growth. I designed and implemented the full automated test suite, performance testing strategy, and vulnerability scanning pipeline &mdash; all integrated into GitLab CI with Docker and SonarQube.</p>
+            <div class="proj-results">
+              <div class="result"><span class="r-val">3-in-1</span><span class="r-lbl">functional + perf + security</span></div>
+              <div class="result"><span class="r-val">CI/CD</span><span class="r-lbl">fully automated pipeline</span></div>
+              <div class="result"><span class="r-val">20%</span><span class="r-lbl">fewer post-release defects</span></div>
+            </div>
+            <div class="proj-stack">
+              <span>Selenium</span><span>Python</span><span>Docker</span><span>Jenkins</span><span>SonarQube</span><span>GitLab CI</span><span>OWASP ZAP</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://agungprakasa.github.io/Myportfolio/" target="_blank" class="plink">Portfolio &#8599;</a>
+              <a href="https://www.linkedin.com/in/agung-prakasa-769b53137/" target="_blank" class="plink ghost">LinkedIn &#8599;</a>
+            </div>
+          </div>
+          <div class="proj-visual">
+            <div class="result-card-visual">
+              <div class="rcv-bar-label">
+                <span>Automation coverage</span><span class="rcv-pct">85%</span>
+              </div>
+              <div class="rcv-bar"><div class="rcv-fill" data-w="85"></div></div>
+              <div class="rcv-bar-label">
+                <span>Regression time saved</span><span class="rcv-pct">30%</span>
+              </div>
+              <div class="rcv-bar"><div class="rcv-fill" data-w="30"></div></div>
+              <div class="rcv-bar-label">
+                <span>Post-release defects reduced</span><span class="rcv-pct">20%</span>
+              </div>
+              <div class="rcv-bar"><div class="rcv-fill" data-w="20"></div></div>
+              <div class="rcv-caption">PT. Pos Indonesia &middot; Bandung, ID</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-idx="1">
+          <div class="proj-info">
+            <div class="proj-meta">
+              <span class="proj-tag">Mobile + Web Automation</span>
+              <span class="proj-year">2017&ndash;Present</span>
+            </div>
+            <h3>Posaja Mobile &amp; Website &mdash; Nationwide Delivery App</h3>
+            <p>A goods delivery application covering all of Indonesia. Built automated test suites for both mobile (Appium) and web (Selenium), integrated with performance testing and OWASP ZAP vulnerability scanning inside Jenkins + Docker pipeline.</p>
+            <div class="proj-stack">
+              <span>Selenium</span><span>Appium</span><span>Python</span><span>Docker</span><span>Jenkins</span><span>OWASP ZAP</span><span>GitLab CI</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://agungprakasa.github.io/Myportfolio/" target="_blank" class="plink">Portfolio &#8599;</a>
+            </div>
+          </div>
+          <div class="proj-info-side">
+            <div class="side-stat"><span>iOS &amp; Android</span>Cross-platform coverage</div>
+            <div class="side-stat"><span>Nationwide</span>Millions of users across Indonesia</div>
+          </div>
+        </div>
+
+        <div class="proj-row" data-idx="2">
+          <div class="proj-info">
+            <div class="proj-meta">
+              <span class="proj-tag">SuperApp QA</span>
+              <span class="proj-year">2017&ndash;Present</span>
+            </div>
+            <h3>Pospay SuperApp &mdash; Courier &amp; Payment Feature</h3>
+            <p>QA for the courier feature within the Pospay SuperApp &mdash; PT. Pos Indonesia's flagship super-app combining payment, delivery, and financial services. Responsible for automated testing, performance, and vulnerability assessment of critical payment and delivery flows.</p>
+            <div class="proj-stack">
+              <span>Selenium</span><span>Python</span><span>Docker</span><span>Jenkins</span><span>SonarQube</span><span>GitLab CI</span><span>Postman</span><span>Burp Suite</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://agungprakasa.github.io/Myportfolio/" target="_blank" class="plink">Portfolio &#8599;</a>
+            </div>
+          </div>
+          <div class="proj-info-side">
+            <div class="side-stat"><span>Payment</span>Security-tested transaction flows</div>
+            <div class="side-stat"><span>OWASP</span>Top 10 vulnerability coverage</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-kicker">/ Experience</p>
+      <h2 class="section-heading">8 years building <em>quality at scale.</em></h2>
+      <div class="exp-grid">
+
+        <div class="exp-card" data-idx="0">
+          <div class="exp-period">2017 &mdash; Present</div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <div>
+                <h3>Senior QA &amp; DevSecOps Engineer</h3>
+                <span class="exp-company">PT. Pos Indonesia (PERSERO) &middot; Bandung, Indonesia</span>
+              </div>
+              <span class="exp-badge">Current</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Led QA efforts for Payment, Logistics, and Internal applications &mdash; achieving 20% reduction in post-release critical defects</li>
+              <li>Implemented automated regression suites with Selenium &amp; Appium, reducing manual testing time by 30%</li>
+              <li>Developed and executed test plans for web and mobile apps using N8N &amp; AI-assisted testing tools</li>
+              <li>Performed API testing with Postman &amp; Burp Suite to validate backend functionality and security</li>
+              <li>Integrated OWASP ZAP and SonarQube into CI/CD pipelines for continuous security monitoring</li>
+              <li>Mentored junior QA engineers on testing methodologies, tools, and best practices</li>
+              <li>Collaborated with product owners, developers, and scrum masters across full agile cycle</li>
+              <li>Identified and tracked bugs using ClickUp and Trello with detailed reproducible steps</li>
+            </ul>
+            <div class="exp-tools">
+              <span>Selenium</span><span>Appium</span><span>Postman</span><span>Burp Suite</span>
+              <span>Python</span><span>JavaScript</span><span>Jenkins</span><span>GitLab CI</span>
+              <span>Docker</span><span>SonarQube</span><span>OWASP ZAP</span><span>Jira</span>
+              <span>TestRail</span><span>Azure DevOps</span><span>MySQL</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="certs-strip">
+        <p class="certs-label">Certifications &amp; Education</p>
+        <div class="certs-row">
+          <div class="cert-item">
+            <span class="cert-icon">&#9729;</span>
+            <div><strong>AWS Cloud Practitioner</strong><span>Amazon Web Services</span></div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">&#128260;</span>
+            <div><strong>Certified Associate in Scrum Fundamentals</strong><span>Agile / Scrum</span></div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">&#128274;</span>
+            <div><strong>Foundation Level Threat Intelligence Analyst</strong><span>Security Certification</span></div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">&#128737;</span>
+            <div><strong>NSE 1, 2 &amp; 3 &mdash; Network Security Associate</strong><span>Fortinet</span></div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">&#127891;</span>
+            <div><strong>Bachelor of Information Technology</strong><span>Universitas Muhammadiyah Ponorogo &middot; 2011&ndash;2016</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-left">
+          <p class="section-kicker">/ Let's work together</p>
+          <h2 class="section-heading">Open to the<br/><em>right opportunity.</em></h2>
+          <p class="contact-body">I'm looking for senior QA, DevSecOps, or test automation roles with global remote teams. Strong async communicator, UTC+7 timezone, with a proven track record in large-scale production environments serving millions of users.</p>
+          <div class="contact-links">
+            <a href="mailto:agungprakasa49@gmail.com" class="cl-item">
+              <div class="cl-icon">&#9993;</div>
+              <div>
+                <strong>Email</strong>
+                <span>agungprakasa49@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/agung-prakasa-769b53137/" target="_blank" class="cl-item">
+              <div class="cl-icon">in</div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/agung-prakasa</span>
+              </div>
+            </a>
+            <a href="https://agungprakasa.github.io/Myportfolio/" target="_blank" class="cl-item">
+              <div class="cl-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div>
+                <strong>Portfolio / GitHub</strong>
+                <span>agungprakasa.github.io/Myportfolio</span>
+              </div>
+            </a>
+            <a href="tel:+6288218320463" class="cl-item">
+              <div class="cl-icon">&#128222;</div>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <span>+62 882 1832 0463</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form">
+            <div class="cf-group">
+              <label for="f-name">Your name</label>
+              <input id="f-name" type="text" placeholder="Jane Smith" autocomplete="off"/>
+            </div>
+            <div class="cf-group">
+              <label for="f-email">Email</label>
+              <input id="f-email" type="email" placeholder="jane@company.com" autocomplete="off"/>
+            </div>
+            <div class="cf-group">
+              <label for="f-company">Company / Role <span class="opt">(optional)</span></label>
+              <input id="f-company" type="text" placeholder="e.g. Acme Corp &middot; Senior QA role"/>
+            </div>
+            <div class="cf-group">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" rows="4" placeholder="Tell me about the role, project, or team..."></textarea>
+            </div>
+            <button class="btn btn-solid full" id="send-btn" onclick="handleSend()">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-row">
+        <span class="f-logo">Agung Prakasa<span class="f-dot">.</span></span>
+        <span class="f-copy">&copy; 2025 &middot; Senior QA &amp; DevSecOps Engineer &middot; Bandung, Indonesia</span>
+        <a href="#hero" class="f-back">&#8593; Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
